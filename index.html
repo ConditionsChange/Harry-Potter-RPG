@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title> Harry Potter RPG</title>
+	 <link rel="stylesheet" href="assets/css/reset.css">
+	 <link rel="stylesheet" href="assets/css/style.css">
+	 <link href="https://fonts.googleapis.com/css?family=Droid+Sans|Roboto:700|Bitter|Ravi+Prakash|Henny+Penny" rel="stylesheet">
+     <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+ 	 <link rel="shortcut icon" type="image/png" href="assets/images/wand-icon.jpg"/>
+</head>
+<body>
+	<div class="wrapper">
+		 <h1>Harry Potter RPG</h1>
+		 <div class="mainrow">
+		 	<div id="harry" class="character">
+		 		<p class="hp">HP: <span id="harry_hp"></span></p>
+		 		<p class="atk">ATK: <span id="harry_atk"></span></p>
+		 		<p class="cntr">CNTR: <span id="harry_cntr"></span></p>	
+		 		<p class="name">Harry</p>		 				 	
+		 		<img src="assets/images/harry.jpg"/>
+		 	</div>
+		 	<div id="hagrid" class="character">
+		 		<p class="hp">HP: <span id="hagrid_hp"></span></p>
+		 		<p class="atk">ATK: <span id="hagrid_atk"></span></p>
+		 		<p class="cntr">CNTR: <span id="hagrid_cntr"></span></p>	
+		 		<p class="name">Hagrid</p>	
+		 		<img src="assets/images/hagrid.jpg"/>
+		 	</div>
+		 	<div id="dumbledore" class="character">
+		 		<p class="hp">HP: <span id="dumbledore_hp"></span></p>
+		 		<p class="atk">ATK: <span id="dumbledore_atk"></span></p>
+		 		<p class="cntr">CNTR: <span id="dumbledore_cntr"></span></p>	
+		 		<p class="name">Dumbledore</p>	
+		 		<img src="assets/images/dumbledore.jpg"/>		 	
+		 	</div>	 	
+		 	<div id="voldemort" class="character">
+		 		<p class="hp">HP: <span id="voldemort_hp"></span></p>
+		 		<p class="atk">ATK: <span id="voldemort_atk"></span></p>
+		 		<p class="cntr">CNTR: <span id="voldemort_cntr"></span></p>	
+		 		<p class="name">Voldemort</p>	
+		 		<img src="assets/images/voldemort.jpg"/>			 	
+		 	</div>
+		 </div>
+		 <div class="secondrow">
+			 <div id="fighter1">
+			 </div>
+			 <img id="vs" src = "assets/images/vs4.png"/>
+			 <div id="fighter2">
+			 </div>
+		</div>
+		<div class="thirdrow">
+			<button id="fight">Fight!</button>
+			<button id="reset">Reset</button>			
+		</div>
+		<div class="gamelog">
+			<span id="log"></span>
+		</div>
+		<div class="fourthrow">
+		</div>
+	</div>
+
+	<script type="text/javascript" src="assets/javascript/game.js"></script>	
+</body>
+</html>

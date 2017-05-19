@@ -1,0 +1,152 @@
+* {
+	font-family: 'Henny Penny', cursive;
+}
+
+html, body{
+	padding:0;
+	margin:0;
+}
+
+body{
+	background-image: url("../images/hpbg.png");
+	background-size: cover;
+}
+
+h1{
+	font-family: 'Henny Penny', cursive;
+	margin: 40px 0px 40px 0px;
+	color:white;
+	font-size:3em;
+	text-align:center;
+}
+
+.wrapper{
+	width: 900px;
+	margin: auto;	
+	border: 2px solid red;	
+}
+
+.mainrow{
+	border:2px solid blue;
+	text-align:center;
+	letter-spacing: -10px;
+}
+
+.character{
+	display:inline-block;
+	cursor: pointer;
+	position:relative;
+	margin: 0 5px 0 5px;
+}
+
+.character img{
+	/*border: 2px solid red;*/
+	width:200px;
+	height:150px;
+}
+
+.secondrow{
+	text-align:center;
+	border:3px solid green;
+	letter-spacing: 70px;
+}
+
+.secondrow div, .secondrow img{
+	display:inline-block;	
+	width:200px;
+	height: 150px;
+	/*border: 2px solid purple;*/
+}
+
+#vs{
+	width:150px;
+	height:150px;
+}
+
+.gamelog{
+	border: 2px solid pink;
+	text-align:center;
+}
+
+button{
+	cursor:pointer;
+}
+
+#log{
+	color:white;
+	font-family: 'Roboto', sans-serif;
+	font-size:1.5em;
+	line-height:150%;
+}
+
+.hp{
+	position:absolute;
+	top: 5px;
+	left: 5px;
+	background-color:white;
+	opacity: .8;
+	font-family: 'Droid Sans', sans-serif;
+	letter-spacing: 2px;
+	font-size:.8em;
+}
+
+.atk{
+	position:absolute;
+	top: 25px;
+	left: 5px;
+	background-color:white;
+	opacity: .8;
+	font-family: 'Droid Sans', sans-serif;
+	letter-spacing: 2px;
+	font-size:.8em;
+}
+
+
+.cntr{
+	position:absolute;
+	top: 45px;
+	left: 5px;
+	background-color:white;
+	opacity: .8;
+	font-family: 'Droid Sans', sans-serif;
+	letter-spacing: 2px;
+	font-size:.8em;
+}
+
+
+.name{
+	position:absolute;
+	margin: auto 0;
+	bottom:10px;
+	right: 5px;
+	background-color:white;
+	opacity: .9;
+	font-family: 'Droid Sans', sans-serif;
+	letter-spacing: 2px;
+	font-size:.8em;
+}
+
+#blue-text{
+	color:#0DDEFF;
+	font-weight:900;
+}
+
+#red-text{
+	color:#ff6a37;
+	font-weight:900;
+}
+
+#yellow-text{
+	color:yellow;
+	font-weight:900;
+}
+
+#orange-text{
+	color:orange;
+	font-weight:900;
+}
+
+#green-text{
+	color:#39FF14;
+	font-weight:900;
+}
