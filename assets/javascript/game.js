@@ -37,9 +37,9 @@ $("#fight").on("click",function(){
 		}
 
 		//initiate combat
-
+		if ((char1.hp > 0) && (char2.hp > 0)){
 		combat_sequence(char1,char2)
-
+		}
 	}
 
 });
@@ -63,7 +63,7 @@ function combat_sequence(char1,char2){
 		wins+=1;
 		$(char2.id).css("filter","invert(100%)")
 		$(".mainrow").append($(char2.id))
-		$("#log").append("<br>" + char2.name + " is defeated.")
+		$("#log").append('<br><span id="red-text">' + char2.name + "</span> is defeated.")
 		if (wins === 3){
 		$("#log").append("<br>YOU WIN!")			
 		}
@@ -79,7 +79,7 @@ function combat_sequence(char1,char2){
 	$("#log").append('<br><span id="red-text">' + char2.name + '</span> counter-attacks <span id="blue-text">' + char1.name + '</span> with <span id="green-text">' + char2.spell + '</span> for <span id="yellow-text">' + char2.counter + " damage.</span>")
 	if (char1.hp <= 0){ //player is defeated
 		char1.status = "defeated"
-		$("#log").append("<br>" + char1.name + " is defeated.")
+		$("#log").append('<br><span id="blue-text">' + char1.name + "</span> is defeated.")
 		$(char1.id).css("filter","invert(100%)")
 		$("#log").append("<br>GAME OVER!")		
 	}
@@ -92,7 +92,7 @@ function combat_sequence(char1,char2){
 	if ((char1.hp > 0) && ( wins <3)){
 	char1.atk+=char1.base
 	$(char1.atk_id).html(char1.atk)
-	$("#log").append("<br>" + char1.name + ' gains <span id="orange-text">' + char1.base + " attack points.</span>")
+	$("#log").append('<br><span id="blue-text">' + char1.name + '</span> gains <span id="orange-text">' + char1.base + " attack points.</span>")
 }
 	console.log("End of combat: ",char1, char2)	
 }
@@ -100,9 +100,12 @@ function combat_sequence(char1,char2){
 
 //Reset Button
 $("#reset").on("click",function(){
+	$("#log").html("Select a character and an opponent for battle");
+
 	$(".mainrow").append($("#harry"),$("#hagrid"),$("#dumbledore"),$("#voldemort"))
 	// $(".character").css("display","inline-block");	
 	// $(".mainrow").css("letter-spacing","15px");	
+
 	harry.status = "alive";
 	hagrid.status = "alive";	
 	dumbledore.status = "alive";
@@ -111,7 +114,7 @@ $("#reset").on("click",function(){
 	$("#hagrid").css("filter","invert(0%)")	
 	$("#dumbledore").css("filter","invert(0%)")
 	$("#voldemort").css("filter","invert(0%)")
-	harry.hp=76
+	harry.hp=79
 	harry.atk=12
 	hagrid.hp=98
 	hagrid.atk=8
@@ -130,8 +133,6 @@ $("#reset").on("click",function(){
 
 	$("#voldemort_hp").html(voldemort.hp)
 	$("#voldemort_atk").html(voldemort.atk)
-
-	$("#log").html("")
 	wins = 0;
 
 });
@@ -195,7 +196,7 @@ function character(check){
 var harry = {
 	name:"Harry",
 	id: "#harry",
-	hp:76,
+	hp:79,
 	atk:12,
 	base:12,
 	counter:16,

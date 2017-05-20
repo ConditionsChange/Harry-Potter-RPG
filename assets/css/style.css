@@ -16,18 +16,24 @@ h1{
 	font-family: 'Henny Penny', cursive;
 	margin: 40px 0px 40px 0px;
 	color:white;
-	font-size:3em;
+	font-size:3.5em;
 	text-align:center;
+	    text-shadow: 2px 2px 4px #000000;
+/*	text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;*/
 }
 
 .wrapper{
 	width: 900px;
 	margin: auto;	
-	border: 2px solid red;	
+	/*border: 2px solid red;	*/
 }
 
 .mainrow{
-	border:2px solid blue;
+	/*border:2px solid blue;*/
 	text-align:center;
 	letter-spacing: -10px;
 }
@@ -41,35 +47,80 @@ h1{
 
 .character img{
 	/*border: 2px solid red;*/
-	width:200px;
-	height:150px;
+	width:196px;
+	height:146px;
+	border: 2px solid black;
 }
 
 .secondrow{
 	text-align:center;
-	border:3px solid green;
+	/*border:3px solid green;*/
 	letter-spacing: 70px;
+	margin-top:10px;
+	margin-bottom:10px;
 }
 
-.secondrow div, .secondrow img{
-	display:inline-block;	
+.secondrow div{
+		display:inline-block;	
 	width:200px;
 	height: 150px;
+	position:relative;
 	/*border: 2px solid purple;*/
 }
 
+.secondrow img{
+	display:inline-block;		
+}
+
+.thirdrow{
+	text-align:center;
+}
+
 #vs{
-	width:150px;
-	height:150px;
+	width:130px;
+	height:130px;
+	position:relative;
+	border:3px solid black;
+	bottom: 5px;
 }
 
 .gamelog{
-	border: 2px solid pink;
+	margin-top:20px;
+	border: 2px solid #00FFFF;
 	text-align:center;
+	border-radius: 25px;
 }
 
 button{
 	cursor:pointer;
+}
+
+#fight{
+    background-color: #31B0D5;
+    border: none;
+    color: white;
+    padding: 3px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 6px 4px;
+    cursor: pointer;
+    font-size:1.1em;
+}
+
+#reset{
+    background-color: #FFFFFF;
+    border: none;
+    color: black;
+    padding: 3px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-size:1.1em;
 }
 
 #log{
@@ -77,6 +128,7 @@ button{
 	font-family: 'Roboto', sans-serif;
 	font-size:1.5em;
 	line-height:150%;
+
 }
 
 .hp{
@@ -85,7 +137,7 @@ button{
 	left: 5px;
 	background-color:white;
 	opacity: .8;
-	font-family: 'Droid Sans', sans-serif;
+font-family: 'Oswald', sans-serif;
 	letter-spacing: 2px;
 	font-size:.8em;
 }
@@ -96,7 +148,7 @@ button{
 	left: 5px;
 	background-color:white;
 	opacity: .8;
-	font-family: 'Droid Sans', sans-serif;
+font-family: 'Oswald', sans-serif;
 	letter-spacing: 2px;
 	font-size:.8em;
 }
@@ -108,7 +160,7 @@ button{
 	left: 5px;
 	background-color:white;
 	opacity: .8;
-	font-family: 'Droid Sans', sans-serif;
+font-family: 'Oswald', sans-serif;
 	letter-spacing: 2px;
 	font-size:.8em;
 }
@@ -121,9 +173,13 @@ button{
 	right: 5px;
 	background-color:white;
 	opacity: .9;
-	font-family: 'Droid Sans', sans-serif;
+font-family: 'Oswald', sans-serif;
 	letter-spacing: 2px;
 	font-size:.8em;
+}
+
+p{
+	padding:2px;
 }
 
 #blue-text{
@@ -149,4 +205,20 @@ button{
 #green-text{
 	color:#39FF14;
 	font-weight:900;
+}
+
+#player, #opponent{
+	position:absolute;
+	bottom:-48px;
+	left:73px;
+	font-size:1.4em;
+	color: white;
+	font-family: 'Oswald', sans-serif;
+	letter-spacing:2px;
+	color:#0DDEFF;
+}
+
+#opponent{
+	left:60px;
+	color:#ff6a37;
 }
