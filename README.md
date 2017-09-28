@@ -16,8 +16,11 @@ The player makes a selection from Harry, Hagrid, Dumbledore, and Voldemort and h
 2. Select your opponent
 3. Do battle with the "Fight" button
   -Your character attacks first then the opponent attacks second
+
   -Damage is calculated by a character's ATK power minus Defender's HP
+
   -A character loses when their HP reaches 0
+  
 4. After each attack the player character gains a 50% boost to their attack
 5. The player wins by defeating all the opponents or loses if their character's HP reaches 0
 
